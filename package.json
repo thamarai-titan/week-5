@@ -10,6 +10,10 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^4.19.2"
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2",
+    "hash": "^0.2.1",
+    "path": "^0.12.7",
+    "session": "^0.1.0"
   }
 }
