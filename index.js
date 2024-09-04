@@ -1,16 +1,21 @@
-const express = require('express')
+const express = require("express");
 
 const app = express();
 
 app.use(express.json());
 
-var Users = [];
-
-app.get('/login', (req, res) => {
-  res.render('login');
+app.get("/", function(req, res) {
+    res.sendFile(__dirname + "/public/index.html");
 })
 
-app.post('/login', (req, res)=>{
-  res.send(`Full name is:${req.body.user} ${req.body.password}.`);
+app.post("/sum", function(req, res) {
+    const a = parseInt(req.body.a);
+    const b = parseInt(req.body.b);
+
+    res.json({
+        answer: a + b
+    })
+    console.log(res)
 })
+
 app.listen(3000);
