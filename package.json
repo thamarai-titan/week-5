@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -11,8 +11,10 @@
   "description": "",
   "dependencies": {
     "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
     "express": "^4.19.2",
     "hash": "^0.2.1",
+    "nodemon": "^3.1.4",
     "path": "^0.12.7",
     "session": "^0.1.0"
   }
